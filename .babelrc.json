@@ -1,0 +1,7 @@
+{
+  // "presets": ["@babel/preset-env", "@bable/preset-react"]
+  // "plugins": [
+  //   "@bable/plugin-transform-runtime",
+  //   ["@babel/plguin-transform-typescript", {"isTSX": true}]
+  // ]
+}
