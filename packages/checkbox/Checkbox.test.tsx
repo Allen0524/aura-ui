@@ -2,7 +2,7 @@ import * as React from 'react'
 import {axe, toHaveNoViolations} from 'jest-axe'
 import type {RenderResult} from '@testing-library/react'
 import {render, fireEvent} from '@testing-library/react'
-import {Checkbox, CheckboxIndicator} from './Checkbox'
+import {Checkbox} from './Checkbox'
 
 const INDICATOR_TEST_ID = 'checkbox-indicator'
 
@@ -46,11 +46,5 @@ describe('<Checkbox />', () => {
 })
 
 function CheckboxTest() {
-  return (
-    <Checkbox aria-label="basic checkbox">
-      <CheckboxIndicator>
-        <div>123</div>
-      </CheckboxIndicator>
-    </Checkbox>
-  )
+  return <Checkbox aria-label="basic checkbox"></Checkbox>
 }

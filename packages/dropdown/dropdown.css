@@ -1,0 +1,46 @@
+.aura-dropsownList {
+  color: #000000d9;
+  background-color: #fff;
+  max-height: 220px;
+  padding: 4px 0px;
+  box-shadow: 0 3px 6px -4px #0000001f, 0 6px 16px #00000014,
+    0 9px 28px 8px #0000000d;
+  border-radius: 2px;
+  outline: none;
+  overflow-y: auto;
+}
+
+.aura-option {
+  box-sizing: border-box;
+  padding: 5px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  min-height: 32px;
+  user-select: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.aura-option:hover {
+  background-color: #f5f5f5;
+}
+
+.aura-option--selected {
+  box-sizing: border-box;
+  padding: 5px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  min-height: 32px;
+  font-weight: 600;
+  background-color: #e6f7ff;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.aura-option--selected:hover {
+  background-color: #e6f7ff;
+}

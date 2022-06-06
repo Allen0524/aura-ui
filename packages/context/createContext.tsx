@@ -1,12 +1,11 @@
-import * as React from 'react'
+import React from 'react'
 
 function createContext<ContextValueType extends object | null>(
   contextName: string,
   defaultContext?: ContextValueType,
 ) {
-  const BaseContext = React.createContext<ContextValueType | undefined>(
-    defaultContext,
-  )
+  const BaseContext =
+    React.createContext<ContextValueType | undefined>(defaultContext)
 
   function Provider(props: ContextValueType & {children: React.ReactNode}) {
     const {children, ...context} = props
@@ -28,4 +27,4 @@ function createContext<ContextValueType extends object | null>(
   return [Provider, useContext] as const
 }
 
-export default createContext
+export {createContext}

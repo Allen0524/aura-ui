@@ -1,7 +1,7 @@
 {
   "name": "aura-ui",
-  "version": "1.0.0",
-  "main": "dist/index.js",
+  "version": "1.0.8",
+  "main": "packages/index.tsx",
   "module": "dist/index.es.js",
   "author": "Allen Li",
   "license": "MIT",
@@ -38,17 +38,22 @@
     "eslint-plugin-react-hooks": "^4.4.0",
     "jest": "^27.5.1",
     "jest-axe": "^6.0.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
     "rollup-plugin-terser": "^7.0.2",
     "ts-jest": "^27.1.4",
     "typescript": "^4.6.3"
   },
   "dependencies": {
+    "@rollup/plugin-babel": "^5.3.1",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.3.2",
     "rollup": "^2.75.5",
-    "rollup-plugin-babel": "^4.4.0"
+    "rollup-plugin-peer-deps-external": "^2.2.4"
+  },
+  "peerDependencies": {
+    "react": ">= 17.0.2",
+    "react-dom": ">= 17.0.2"
   },
   "jest": {
     "testEnvironment": "jsdom",

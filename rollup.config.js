@@ -1,8 +1,9 @@
 import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
 import typescript from '@rollup/plugin-typescript'
-import babel from 'rollup-plugin-babel'
+import babel from '@rollup/plugin-babel'
 import {terser} from 'rollup-plugin-terser'
+import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 
 export default [
   {
@@ -19,6 +20,7 @@ export default [
       },
     ],
     plugins: [
+      peerDepsExternal(),
       babel({
         exclude: 'node_modules/**',
         preset: ['@babel/preset-react'],

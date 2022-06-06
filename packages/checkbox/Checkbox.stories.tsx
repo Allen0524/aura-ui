@@ -40,7 +40,7 @@ export const FormCheckboxUnControlled = () => {
     const formData = e.target.elements
     console.log(formData)
     console.log(formData.firstname.value)
-    console.log(formData.yes_no.checked)
+    console.log(e.target[1].checked)
   }
   return (
     <form onSubmit={handleOnSubmit}>
@@ -52,8 +52,7 @@ export const FormCheckboxUnControlled = () => {
         placeholder="type somethig..."
       />
       <br />
-      <label htmlFor="yes_no">yes/no</label>
-      <CustomCheckbox id="yes_no" />
+      <CustomCheckbox />
       <br />
       <button type="submit">submit</button>
     </form>
